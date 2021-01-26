@@ -27,9 +27,7 @@ impl GameState for State {
 
 fn main() -> BError {
     let mut state = State { ecs: World::new() };
-    let context = BTermBuilder::simple80x50()
-        .with_title("Toddlilke")
-        .build()?;
+    let context = BTermBuilder::simple80x50().with_title("Toddlike").build()?;
 
     state.ecs.register::<entities::Position>();
     state.ecs.register::<entities::Renderable>();
