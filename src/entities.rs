@@ -30,3 +30,12 @@ impl Renderable {
         }
     }
 }
+
+#[derive(Component)]
+pub(crate) struct Player {}
+
+impl Player {
+    pub(crate) fn new() -> Self {
+        Player {}
+    }
+}
